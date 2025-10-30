@@ -1,26 +1,42 @@
+
 # 🐱🐶 Cat vs Dog Image Classifier
 
-This project is a Deep Learning-based **Image Classification Model** that predicts whether an image contains a **cat or a dog**.  
-It is implemented using **TensorFlow/Keras** and trained on a dataset of cat and dog images.
+This project is a Deep Learning case study that uses **Convolutional Neural Networks (CNNs)** to classify images as either **Cat** or **Dog**.
+It demonstrates image preprocessing, model building, evaluation, and prediction using **TensorFlow/Keras**.
 
 ---
 
-## 🚀 Features
-- Image classification using Convolutional Neural Networks (CNN)
-- Trains and evaluates the model using TensorFlow/Keras
-- Visualises model accuracy and loss graphs
-- Predicts unseen images (cat or dog)
+## 📊 Features of the Project
+
+* Image Preprocessing and Augmentation
+* Model Building using Convolutional Neural Network (CNN)
+* Accuracy and Loss Visualization
+* Image Prediction (Cat or Dog)
+* Saved Model for Future Inference
+* Optional Web App using Streamlit
+
+---
+
+## 📁 Dataset
+
+Dataset used:
+
+* **Cat and Dog Dataset** (by TongPython)
+
+Download from **[Dataset Download](https://www.kaggle.com/datasets/tongpython/cat-and-dog)**
 
 ---
 
 ## 📂 Project Structure
+
+```
 Cat-vs-Dog-Classifier/
 │
-├── cat_dog.ipynb                # Your main notebook
-├── requirements.txt             # All dependencies
-├── README.md                    # Project description
+├── cat_dog.ipynb              # Main Jupyter Notebook
+├── requirements.txt           # Dependencies file
+├── README.md                  # Project documentation
 │
-├── dataset/                     # (Optional) Folder to store images
+├── dataset/                   # (Optional) Folder for dataset
 │   ├── train/
 │   │   ├── cats/
 │   │   └── dogs/
@@ -28,28 +44,92 @@ Cat-vs-Dog-Classifier/
 │       ├── cats/
 │       └── dogs/
 │
-├── model/                       # (Optional) Folder to store saved models
+├── model/                     # (Optional) Folder to store saved models
 │   └── cat_dog_model.h5
 │
-└── results/                     # (Optional) Folder for prediction outputs
+└── results/                   # (Optional) Folder for output predictions
     └── sample_predictions/
-
----
-
-🧠 Libraries Used
-
-TensorFlow / Keras
-NumPy
-Pandas
-Matplotlib
-scikit-learn
-
-## 📥 Dataset
-Please use the **dataset download** from Kaggle at  Kaggle (TongPython’s “Cat and Dog” dataset)  to retrieve the images that you will use for training and testing.
+```
 
 ---
 
 ## ⚙️ Requirements
-Install the dependencies using:
+
+Install the required dependencies before running the notebook:
+
+### Required Libraries
+
+```
+tensorflow
+numpy
+pandas
+matplotlib
+scikit-learn
+opencv-python
+jupyter
+```
+
+### Install all dependencies at once:
+
 ```bash
 pip install -r requirements.txt
+```
+
+---
+
+## 🔧 How to Run
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Cat-vs-Dog-Classifier.git
+cd Cat-vs-Dog-Classifier
+```
+
+### 2. (Optional) Create a Virtual Environment
+
+```bash
+python -m venv venv
+source venv/bin/activate   # For Linux/Mac
+venv\Scripts\activate      # For Windows
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Notebook
+
+```bash
+jupyter notebook cat_dog.ipynb
+```
+
+---
+
+## 📊 Model Performance
+
+* **Training Accuracy:** 97%
+* **Validation Accuracy:** ~99%
+
+---
+
+## 💡 Future Improvements
+
+* Implement data augmentation for better generalization
+* Try transfer learning with models like VGG16 or ResNet50
+* Build an interactive web app using Streamlit
+
+---
+
+## 👨‍💻 Author
+
+**Manikandaa S**
+🎓 Data Science Enthusiast | 💡 Passionate about AI & ML
+🔗 [LinkedIn](https://www.linkedin.com/in/manikandaa-s-aa676225a) | [GitHub](https://github.com/Manikandaa148)
+
+---
+
+### ⭐ Don’t forget to star this repo if you found it helpful!
+
